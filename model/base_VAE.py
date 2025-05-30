@@ -32,7 +32,7 @@ class ResidualBlock(nn.Module):
     out = self.relu(out)
     out = self.conv2(out)
     x1 = x + out * 0.1 # the paper recommends a scaling factor of 0.1, possibly change
-    return out
+    return x1
 
 class HiCEncoder(nn.Module):
 
